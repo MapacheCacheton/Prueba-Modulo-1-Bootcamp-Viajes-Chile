@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 header nav a{
@@ -38,5 +39,12 @@ header ul{
 #destacados img{
     height: 150px;
 
+}
+footer{
+    vertical-align: middle;
+}
+footer i{
+    font-size: 2.5em;
+    padding: 0 .3em;
 }
 
