@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viajes Chile</title>
-  
+  <!-- Cdn Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  
-  <!-- añadir cdn de tipografia -->
+  <!-- Cdn Tipografia Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Cdn Iconos Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Estilos Css -->
   <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-  <header class="bg-info">
+  <header class="fondo-header">
     <nav class="navbar navbar-expand-lg navbar-dark container">
       <a class="navbar-brand" href="#">
         <ul class="row list-unstyled">
@@ -26,16 +31,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Quienes Somos</a>
+            <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Destacados</a>
+            <a class="nav-link" href="#destacados">Destacados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -43,7 +48,7 @@
     
   </header>
   <main>
-    <section class="carousel-hero">
+    <section id="inicio" class="carousel-hero">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -67,72 +72,75 @@
       </div>
     </section>
     
-    <section class="quienes-somos text-center">
-      <div class="container ">
-        <h2>¿Quienes somos?</h2>
-        <div class="card-deck row">
-          <div class="card col-sm-12 col-md-6 col-lg-4">
-            <div class="card-body">
-              <i></i><!-- añadir icono -->
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorem quos deleniti aliquam debitis culpa quo consequatur provident saepe eligendi architecto pariatur alias repellendus voluptates accusantium vel enim nulla? Quis?
-                Eos ut aut sequi animi vel a nobis sint tempora, voluptate enim incidunt assumenda officia dicta repellat nihil eaque, eum accusamus dolor maxime harum natus iure vero quisquam veritatis? Officiis.</p>
-              </div>
+    <section id="quienes-somos" class="text-center my-5">
+      <h2>¿Quienes somos?</h2>
+      <div class="container my-4 py-4 borde">
+        <div class="card-deck">
+          <div class="card fondo-negro" style="width: 18rem;">
+            <div class="card-header bg-info p-1">
+              <i class="fas fa-plane"></i>
             </div>
-            <div class="card col-sm-12 col-md-6 col-lg-4">
-              <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorem quos deleniti aliquam debitis culpa quo consequatur provident saepe eligendi architecto pariatur alias repellendus voluptates accusantium vel enim nulla? Quis?
-                  Eos ut aut sequi animi vel a nobis sint tempora, voluptate enim incidunt assumenda officia dicta repellat nihil eaque, eum accusamus dolor maxime harum natus iure vero quisquam veritatis? Officiis.</p>
-                  <i></i><!-- añadir icono -->
-                </div>
-              </div>
-              <div class="card col-sm-12 col-md-6 col-lg-4">
-                <div class="card-body">
-                  <i></i><!-- añadir icono -->
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, dolorem quos deleniti aliquam debitis culpa quo consequatur provident saepe eligendi architecto pariatur alias repellendus voluptates accusantium vel enim nulla? Quis?
-                    Eos ut aut sequi animi vel a nobis sint tempora, voluptate enim incidunt assumenda officia dicta repellat nihil eaque, eum accusamus dolor maxime harum natus iure vero quisquam veritatis? Officiis.</p>
-                  </div>
-                </div>
-              </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item fondo-negro"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum quam, deleniti adipisci error ratione consequuntur, enim possimus fugit tempora voluptas! Qui doloremque minus eum animi nam inventore modi porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim ab eos assumenda asperiores, nobis vitae voluptate odit eius, illo sint repudiandae! Dolores animi rem quisquam. Dicta aliquam cum dignissimos?</p></li>
+            </ul>
+          </div>
+          <div class="card fondo-negro" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item fondo-negro"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum quam, deleniti adipisci error ratione consequuntur, enim possimus fugit tempora voluptas! Qui doloremque minus eum animi nam inventore modi porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim ab eos assumenda asperiores, nobis vitae voluptate odit eius, illo sint repudiandae! Dolores animi rem quisquam. Dicta aliquam cum dignissimos?</p></li>
+            </ul>
+            <div class="card-footer bg-info p-1">
+              <i class="fas fa-mountain"></i>
             </div>
-          </section>
+          </div>
+          <div class="card fondo-negro" style="width: 18rem;">
+            <div class="card-header bg-info p-1">
+              <i class="fas fa-route"></i>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item fondo-negro"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum quam, deleniti adipisci error ratione consequuntur, enim possimus fugit tempora voluptas! Qui doloremque minus eum animi nam inventore modi porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis enim ab eos assumenda asperiores, nobis vitae voluptate odit eius, illo sint repudiandae! Dolores animi rem quisquam. Dicta aliquam cum dignissimos?</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
           
-          <section class="destacados">
+          <section id="destacados" class="">
             <div class="container text-center">
               <h2>Destacados</h2>
-              <div class="row row-cols-1 row-cols-md-4">
+              <div class="row row-cols-1 row-cols-md-4 my-4 py-4 borde">
                 <div class="col mb-4">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-info">
                       <h5 class="card-title">Lorem, ipsum dolor sit amet</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto vero aut quos aliquam cupiditate sunt?</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mb-4">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-info">
                       <h5 class="card-title">Consectetur adipisicing elit</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto vero aut quos aliquam cupiditate sunt?</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mb-4">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-info">
                       <h5 class="card-title">Debitis laboriosam neque molestias amete</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto vero aut quos aliquam cupiditate sunt?</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto</p>
                     </div>
                   </div>
                 </div>
                 <div class="col mb-4">
                   <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-info">
                       <h5 class="card-title">Sequi repellendus illo explicabo Expedita</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto vero aut quos aliquam cupiditate sunt?</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam ut placeat temporibus adipisci quas ipsum harum vel tempore, excepturi nostrum modi veritatis architecto</p>
                     </div>
                   </div>
                 </div>
@@ -140,7 +148,7 @@
             </div>
           </section>
           
-          <section class="contacto">
+          <section id="contacto">
             <div class="container text-center">
               <div class="card py-5">
                 <div class="card-body">

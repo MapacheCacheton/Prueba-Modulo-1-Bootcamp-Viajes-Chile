@@ -19,6 +19,24 @@ header ul{
     vertical-align: middle;
 }
 
-.borde-superior{
-    border-top: 2px turquoise;
+.borde{
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #38a8b1;
 }
+.fondo-negro{
+    background-color: black;
+    color: white;
+}
+.fondo-header{
+    background-color: #38a8b1;
+}
+
+#quienes-somos i{
+    font-size: 2em;
+}
+#destacados img{
+    height: 150px;
+
+}
+
