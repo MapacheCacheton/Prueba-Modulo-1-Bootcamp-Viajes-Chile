@@ -3,21 +3,12 @@ body{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-
-header nav a{
-    display:inline-block;
-}
 header nav img{
-    width: 100%;
+    width: 70%;
     display: inline;
 }
-header ul li{
-    padding: 0;
-    vertical-align: middle;
-}
-header ul{
+header h3{
     margin: 0;
-    vertical-align: middle;
 }
 
 .borde{
