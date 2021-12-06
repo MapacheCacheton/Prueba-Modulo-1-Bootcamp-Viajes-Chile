@@ -3,12 +3,9 @@ body{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-header nav img{
-    width: 70%;
-    display: inline;
-}
-header h3{
+header ul li>{
     margin: 0;
+    padding: 5px 10px;
 }
 
 .borde{
@@ -34,8 +31,141 @@ header h3{
 footer{
     vertical-align: middle;
 }
+footer h3{
+    margin: 0;
+}
 footer i{
     font-size: 2.5em;
     padding: 0 .3em;
 }
 
+@media (max-width: 575px)
+{
+    header nav .logotipo{
+        margin: 0;
+        display: inline-block;
+        width: 50%;
+    }
+    header nav img{
+        width: 15%;
+        display: inline;
+    }
+    header h3{
+        width: 50%;
+        font-size: 2em;
+        margin: 0;
+        display: inline;
+    }
+    .navegacion{
+        text-align: center;
+    }
+    #quienes-somos{
+        display: none;
+    }
+    footer{
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+@media (min-width: 576px)
+{
+    header nav .logotipo{
+        margin: 0;
+        width: 50%;
+        display: inline-block;
+    }
+    header nav img{
+        width: 10%;
+        display: inline;
+    }
+    header h3{
+        width: 50%;
+        font-size: 1.8em;
+        margin: 0;
+        display: inline;
+    }
+    #quienes-somos{
+        display: none;
+    }
+    footer{
+        text-align: center;
+    }
+}
+@media (min-width: 768px)
+{
+    header nav .logotipo{
+        margin: 0;
+        width: 70%;
+        display: inline-block;
+    }
+    header nav img{
+        width: 8%;
+        display: inline;
+    }
+    header h3{
+        width: 50%;
+        font-size: 1.6em;
+        margin: 0;
+        display: inline;
+    }
+    #quienes-somos{
+        display: none;
+    }
+}
+@media (min-width: 992px)
+{
+    header nav .logotipo{
+        margin: 0;
+        width: 50%;
+        display: inline-block;
+    }
+    header nav img{
+        width: 7%;
+        display: inline;
+    }
+    header h3{
+        width: 50%;
+        margin: 0;
+        font-size: 1.4em;
+        display: inline;
+    }
+    #quienes-somos{
+        display: block;
+    }
+}
+@media (min-width: 1200px)
+{
+    header nav .logotipo{
+        margin: 0;
+        width: 50%;
+        display: inline-block;
+    }
+    header nav img{
+        width: 6%;
+        display: inline;
+    }
+    header h3{
+        width: 50%;
+        margin: 0;
+        font-size: 1.3em;
+        display: inline;
+    }
+}
+@media (min-width: 1400px)
+{
+    header nav .logotipo{
+        margin: 0;
+        width: 50%;
+        display: inline-block;
+    }
+    header nav img{
+        width: 5%;
+        display: inline;
+    }
+    header h3{
+        width: 50%;
+        font-size: 1em;
+        margin: 0;
+        display: inline;
+    }
+}
